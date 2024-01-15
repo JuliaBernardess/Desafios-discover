@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+   
+    <form action="/envio.html" method="post">
+        <fieldset>
+          <legend>Entre em Contato</legend>
+
+       <!-- Campo para escolher o assunto do contato -->
+         <label for="assunto"> <strong> Assunto:</strong></label>
+         <select name="asunto" id="assunto" required>
+            <option value="suporte">Suporte</option>
+            <option value="sugestões">Sugestões</option>
+            <option value="reclamações">Reclamações</option>
+         </select>
+          <br>
+          <!-- Campos para nome e e-mail -->
+          <p>
+          <label for="nome"><strong>Nome completo:</strong> </label>
+          <br>
+          <input type="text" id="nome" name="nome" placeholder="nome completo" required>
+        </p>
+
+         <p>
+          <label for="email"> <strong>E-mail:</strong></label>
+          <br>
+          <input type="email" id="email" name="email" placeholder="e-mail@seudominio.com" required>
+        </p>
+          <!-- Área de texto para a mensagem -->
+         <label for="mensagem"> <strong>Mensagem:</strong></label>
+         <br>
+          <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="mensagem" ></textarea>
+            <br>
+          <!-- Checkbox para aceitar novidades por e-mail -->
+          <p><input type="checkbox" name="novidades" id="novidades"><label for="novidades">Aceitar as novidades por e-mail</label></p>
+          
+          <!-- Botão de envio -->
+            <button type="submit" name="button" id="btnenviar">enviar</button>     
+          
+            <button type="reset" name="button" id="btnlimpar">Limpar</button>  
+    </form>
+</fieldset>
+</body>
+</html>
